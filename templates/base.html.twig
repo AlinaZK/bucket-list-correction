@@ -11,6 +11,23 @@
 
     <title>{% block title %}Bucket-list{% endblock %}</title>
 </head>
+{% for label, messages in app.flashes  %}
+    {% for message in messages  %}
+        <div class ="flash-{{ label }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}
+{#toujour meme code pour affichage FLECH odnorazovie #}
+{% for label, messages in app.flashes  %}
+    {% for message in messages  %}
+        <div class ="flash-{{ label }}">
+            {{ message }}
+        </div>
+
+    {% endfor %}
+{% endfor %}
+
 <body>
 
     <div class="container">

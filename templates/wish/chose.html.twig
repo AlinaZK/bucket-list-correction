@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Create a chose | {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <div>
+        {# Balise forme ouvrante #}
+        {{form_start(choseForm)}}
+
+        {# Affichage de touts les formulare  #}
+        {{form_widget(choseForm)}}
+        <button>Create</button>
+
+        {# Balise forme ferment#}
+        {{form_end(choseForm)}}
+    </div>
+
+{% endblock %}
